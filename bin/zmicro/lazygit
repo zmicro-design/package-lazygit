@@ -1,0 +1,17 @@
+#!/bin/bash
+
+help() {
+  echo "Usage:"
+  echo "  zmicro lazygit <args ...>"
+  echo ""
+}
+
+core() {
+  lazygit "$@"
+}
+
+run() {
+  core "$@"
+}
+
+run "$@"
